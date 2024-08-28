@@ -2,17 +2,17 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === "MIT") {
-    return `[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+    return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
   } else if (license === "Apache") {
-    return `[License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
+    return `![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
   } else if (license === "BSD 3-Clause") {
-    return `[License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)`;
+    return `![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)`;
   } else if (license === "BSD 2-Clause") {
-    return `[License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)`;
+    return `![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)`;
   } else if (license === "Eclipse") {
-    return `[License](https://img.shields.io/badge/License-EPL%201.0-red.svg)`;
+    return `![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)`;
   } else if (license === "GNU") {
-    return `[License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)`;
+    return `![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)`;
   } else {
     return "";
   }
@@ -76,7 +76,7 @@ function generateMarkdown(data) {
 
   ${data.usage}
 
-  [Usage Screenshot](${data.usageImage})
+  ![Usage Screenshot](${data.usageImage})
 
   ## License
 
